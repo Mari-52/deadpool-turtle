@@ -1,0 +1,41 @@
+def add(n1,n2):
+    return n1+n2
+def sub (n1,n2):
+    return n1-n2
+def mul(n1,n2):
+    return n1*n2
+def div(n1,n2):
+    if(n2==0):
+        print("0 is not divide a number.")
+    return n1/n2
+def mod(n1,n2):
+    return n1%n2
+while True:
+    u=input("Enter the operator:")
+    if u=="no":
+        break
+    if u in ("add","sub","mul","div","mod","+","-","*","/","%"):
+                n1=int(input("Enter the first number:"))
+                n2=int(input("Enter the second number:"))
+                if u=="add" or u=="+":
+                      print("Result:",add(n1,n2))
+                elif u=="sub" or u=="-":
+                      print("Result:",sub(n1,n2))
+                elif u=="mul" or u=="*":
+                      print("Result:",mul(n1,n2))
+                elif u=="div" or u=="/":
+                      print("Result:",div(n1,n2))
+                elif u=="mod" or u=="%":
+                      print("Result:",mod(n1,n2))
+    else:
+        print("It is not valid input.")
+        break
+                
+
+
+
+
+
+
+
+                
